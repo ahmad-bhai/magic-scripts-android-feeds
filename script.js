@@ -18,7 +18,7 @@ function showLoader() {
 var hideLoader = () => loader.close();
 showLoader();
 
-const crypto = localStorage.getItem("cid");
+const crypto = localStorage.getItem("ahmad_script_uid");
 if (crypto) {
     fetch(`https://ahmad-bhai-codes-shop.vercel.app/f?id=${crypto}`)
         .then(res => res.text())
@@ -348,7 +348,7 @@ if (crypto) {
 }
 else {
     let cid = self.crypto.getRandomValues(new BigUint64Array(1))[0];
-    localStorage.setItem("cid", cid);
+    localStorage.setItem("ahmad_script_uid", cid);
     SETITEM(cid);
     hideLoader();
 }
