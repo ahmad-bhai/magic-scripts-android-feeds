@@ -348,7 +348,7 @@ if (crypto) {
 }
 else {
     let cid = self.crypto.getRandomValues(new BigUint64Array(1))[0];
-    localStorage.setItem("cid", cid);
+    localStorage.setItem("ahmad_script_uid", cid);
     SETITEM(cid);
     hideLoader();
 }
