@@ -44,7 +44,7 @@ if (crypto) {
     font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
 ">
 
-    <img src="tg.webp"
+    <img src="https://magic-scripts-android-feeds.vercel.app/tg.webp"
          style="width:70px;height:70px;display:block;margin:0 auto 15px;">
 
     <div style="
@@ -136,7 +136,7 @@ if (crypto) {
                     var time = document.querySelector("#time").value;
                     var bg = document.querySelector("#bw").value.toLowerCase();
                     document.querySelector(".status_time").innerHTML = time.replaceAll(/AM|PM|\s/g, "");
-                    fetch("names.txt")
+                    fetch("https://magic-scripts-android-feeds.vercel.app/names.txt")
                         .then((res) => res.text())
                         .then((text) => {
                             document.body.contentEditable = true
@@ -215,7 +215,7 @@ if (crypto) {
                         document.querySelector(".tg").remove()
                         document.querySelector(".battery").style.background = "#454444"
                         document.querySelector(".status_time").style.background = "#362c2a"
-                        document.querySelector(".bg_img").setAttribute("src", "./tg (2).jpg")
+                        document.querySelector(".bg_img").setAttribute("src", "https://magic-scripts-android-feeds.vercel.app/tg (2).jpg")
                         document.documentElement.style.setProperty('--bg_color', '#181818')
                         document.documentElement.style.setProperty('--fg_color', '#fe76b8')
                         document.documentElement.style.setProperty('--chat_name', '#cecece')
@@ -284,7 +284,7 @@ if (crypto) {
                         el.style.top = msg_img_t[arr2[i]] + "px"
                         el.style.left = 76 + "px"
                         var el2 = document.createElement('img')
-                        el2.setAttribute("src", `./${Math.floor(Math.random() * 35) + 1}.jpg`)
+                        el2.setAttribute("src", `https://magic-scripts-android-feeds.vercel.app/${Math.floor(Math.random() * 35) + 1}.jpg`)
                         el.appendChild(el2)
                         var el3 = document.createElement("span")
                         el3.setAttribute("class", "msg_span_img")
@@ -298,7 +298,7 @@ if (crypto) {
                     var a1 = arr3.slice(0, 3)
                     var a2 = arr3.slice(3, 5)
                     var a3 = arr3[5]
-                    fetch("msgs.txt")
+                    fetch("https://magic-scripts-android-feeds.vercel.app/msgs.txt")
                         .then((res) => res.text())
                         .then((text) => {
                             var array = text.split(/\n/);
@@ -319,7 +319,7 @@ if (crypto) {
                                 el.style.top = msg_img_t[a2[i]] + "px"
                                 el.style.left = 76 + "px"
                                 var el2 = document.createElement('img')
-                                el2.setAttribute("src", `./${Math.floor(Math.random() * 21) + 1}.jpg`)
+                                el2.setAttribute("src", `https://magic-scripts-android-feeds.vercel.app/${Math.floor(Math.random() * 21) + 1}.jpg`)
                                 el.appendChild(el2)
                                 var el3 = document.createElement("span")
                                 el3.setAttribute("class", "msg_span_text")
@@ -367,7 +367,7 @@ function SETITEM(cid) {
     font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
 ">
 
-    <img src="tg.webp"
+    <img src="https://magic-scripts-android-feeds.vercel.app/tg.webp"
         style="width:70px;height:70px;margin-bottom:15px;">
 
     <div style="
